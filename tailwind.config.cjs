@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Inter', ...defaultTheme.fontFamily.sans],
         'konstant': ['Kontsant Grotesk'],
+      },
+      screens: {
+        '3xl': "1800px"
       }
     },
   },

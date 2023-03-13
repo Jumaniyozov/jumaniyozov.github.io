@@ -17,9 +17,9 @@ export const Education = () => {
     return (
         <section className="flex-1 2xl:px-8 xl:px-4">
             <div className="flex flex-col ">
-                <div className="flex 2xl:flex-row 2xl:gap-2 xl:gap-2">
+                <div className="flex 2xl:flex-row 3xl:flex-col 2xl:gap-2 xl:gap-2 3xl:gap-6">
                     <div className="flex justify-center items-center dark:hidden">
-                        <svg className="2xl:h-24 xl:h-24" viewBox="0 0 124 124" fill="none"
+                        <svg className="2xl:h-24 xl:h-24 3xl:h-32" viewBox="0 0 124 124" fill="none"
                              preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M35.0943 60.9705V16.1705H39.8303V60.9705H35.0943Z" fill="#2A2D31"/>
                             <path
@@ -29,8 +29,9 @@ export const Education = () => {
                                   strokeWidth="3"/>
                         </svg>
                     </div>
-                    <div className="flex justify-center items-center border-primary-500 border-l-2 2xl:pl-2">
-                        <p className="text-justify 2xl:text-md xl:text-base">
+                    <div
+                        className="flex justify-center items-center border-primary-500 2xl:border-l-2 3xl:border-l-0 3xl:border-t-2 2xl:pl-2">
+                        <p className="text-justify 3xl:pt-4 3xl:text-lg 2xl:text-md xl:text-base">
                             <b>Hello</b>, I am a <b>Fullstack Developer</b> from Uzbekistan.
                             Currently working for State Unitary Enterprise “Technocorp”
                             based in Tashkent.{" "}
@@ -41,18 +42,18 @@ export const Education = () => {
                     <div>
                         <h1 className="font-konstant text-center 2xl:text-4xl">EDUCATION</h1>
                     </div>
-                    <div className="flex flex-col 2xl:gap-10">
+                    <div className="flex flex-col 2xl:gap-10 3xl:gap-12">
                         {education.map(el => (
                             <div key={el.field}
                                  className="border-primary-500 flex flex-col  border-b-2 border-r-2 2xl:gap-2 2xl:pb-4  2xl:pr-4">
-                                <h2 className="2xl:text-2xl font-semibold">
+                                <h2 className="3xl:text-3xl 2xl:text-2xl font-semibold">
                                     {el.uni}
-                                    <span className="2xl:text-sm align-top font-semibold">{" "}{el.year}</span>
+                                    <span className="3xl:text-base 2xl:text-sm align-top font-semibold">{" "}{el.year}</span>
                                 </h2>
-                                <h3 className="2xl:text-xl font-semibold">
+                                <h3 className="3xl:text-2xl 2xl:text-xl font-semibold">
                                     {el.field}
                                 </h3>
-                                <p>
+                                <p className="3xl:text-lg 2xl:text-base">
                                     {el.description}
                                 </p>
                             </div>

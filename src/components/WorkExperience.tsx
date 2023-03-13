@@ -1,4 +1,3 @@
-
 const work = [
     {
         org: "TECHNOCORP",
@@ -28,18 +27,18 @@ export const WorkExperience = () => {
                     <div>
                         <h1 className="font-konstant text-center 2xl:text-4xl">WORK EXPERIENCE</h1>
                     </div>
-                    <div className="flex flex-col 2xl:gap-6">
+                    <div className="flex flex-col 3xl:gap-8 2xl:gap-6">
                         {work.map(el => (
                             <div key={el.org}
-                                 className="border-primary-500 flex flex-col  border-b-2 border-r-2 2xl:gap-2 2xl:pb-4  2xl:pr-4">
-                                <h2 className="2xl:text-2xl font-semibold">
+                                 className="border-primary-500 flex flex-col  border-b-2 border-r-2 3xl:gap-4 2xl:gap-2 3xl:pb-8 3xl:pr-6 2xl:pb-4  2xl:pr-4">
+                                <h2 className="3xl:text-3xl 2xl:text-2xl font-semibold">
                                     {el.org}
-                                    <span className="2xl:text-sm align-top font-semibold">{" "}{el.year}</span>
+                                    <span className="3xl:text-base 2xl:text-sm align-top font-semibold">{" "}{el.year}</span>
                                 </h2>
-                                <h3 className="2xl:text-xl font-semibold">
+                                <h3 className="3xl:text-2xl 2xl:text-xl font-semibold">
                                     {el.position}
                                 </h3>
-                                <p>
+                                <p className="3xl:text-lg 2xl:text-base">
                                     {el.description}
                                 </p>
                             </div>
